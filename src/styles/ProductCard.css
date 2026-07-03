@@ -1,0 +1,191 @@
+.product-card{
+
+    width:320px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+/* -------- Modification 1 -------- */
+
+.product-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.18);
+
+}
+
+/* Image */
+
+.product-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.product-card:hover .product-image{
+
+    transform:scale(1.08);
+
+}
+
+/* Heart */
+
+.favorite{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:45px;
+
+    height:45px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#999;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+/* -------- Modification 2 -------- */
+
+.favorite:hover{
+
+    color:red;
+
+    transform:scale(1.25);
+
+}
+
+/* Details */
+
+.product-details{
+
+    padding:20px;
+
+}
+
+/* Rating */
+
+.rating{
+
+    color:orange;
+
+    margin-bottom:10px;
+
+}
+
+.rating span{
+
+    color:#444;
+
+    margin-left:8px;
+
+}
+
+/* -------- Modification 3 -------- */
+
+.rating svg{
+
+    transition:.3s;
+
+}
+
+.rating:hover svg{
+
+    transform:rotate(15deg);
+
+}
+
+.product-details h3{
+
+    margin-bottom:10px;
+
+    color:#4a2c2a;
+
+}
+
+.product-details p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+.bottom-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.bottom-row h2{
+
+    color:#4a2c2a;;
+
+}
+
+.add-btn{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#4a2c2a;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.add-btn:hover{
+
+    transform:rotate(180deg) scale(1.1);
+
+    background:#005f3c;
+
+}

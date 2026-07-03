@@ -1,0 +1,355 @@
+/* ===================================
+   ABOUT PAGE
+=================================== */
+
+.about-container{
+    width:90%;
+    margin:80px auto;
+}
+
+/* ===============================
+   STORY SECTION
+================================ */
+
+.about-section{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+
+    margin-bottom:100px;
+
+}
+
+.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+/* Image */
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+.about-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Text */
+
+.about-content{
+
+    flex:1;
+
+}
+
+.about-content h2{
+
+    font-size:42px;
+
+    color:#4a2c2a;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+}
+
+.about-content h2::after{
+
+    content:"";
+
+    width:90px;
+    height:4px;
+
+    background:#4a2c2a;
+
+    position:absolute;
+
+    left:0;
+    bottom:-10px;
+
+}
+
+.about-content p{
+
+    margin-top:25px;
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:32px;
+
+    text-align:justify;
+
+}
+
+/* ===============================
+   MISSION
+================================ */
+
+.mission-section{
+
+    background:#F8F6F2;
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.mission-section h2{
+
+    font-size:45px;
+
+    color:#4a2c2a;
+
+    margin-bottom:60px;
+
+}
+
+.mission-cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.mission-card{
+
+    width:320px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}
+
+.mission-card h3{
+
+    color:#4a2c2a;
+
+    margin-bottom:18px;
+
+    font-size:26px;
+
+}
+
+.mission-card p{
+
+    color:#555;
+
+    line-height:28px;
+
+}
+
+/* ===============================
+   REVIEWS
+================================ */
+
+.review-section{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+.review-section h2{
+
+    font-size:42px;
+
+    color:#4a2c2a;
+
+    margin-bottom:60px;
+
+}
+
+.review-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.review-card{
+
+    width:330px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.review-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.review-card h3{
+
+    margin:18px 0;
+
+    color:#4a2c2a;
+
+}
+
+.review-card p{
+
+    color:#666;
+
+    line-height:28px;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media(max-width:992px){
+
+.about-section{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.reverse{
+
+flex-direction:column;
+
+}
+
+.about-content h2::after{
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.about-content p{
+
+text-align:center;
+
+}
+
+.mission-cards{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.review-container{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-image img{
+
+height:280px;
+
+}
+
+.about-content h2{
+
+font-size:32px;
+
+}
+
+.about-content p{
+
+font-size:16px;
+
+line-height:28px;
+
+}
+
+.mission-section h2{
+
+font-size:35px;
+
+}
+
+.review-section h2{
+
+font-size:35px;
+
+}
+
+.mission-card,
+.review-card{
+
+width:100%;
+
+}
+
+}

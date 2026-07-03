@@ -1,0 +1,282 @@
+/* ===========================
+   MENU CARD
+=========================== */
+
+.menu-card{
+
+    width:320px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+/* Hover */
+
+.menu-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.menu-image{
+
+    overflow:hidden;
+
+}
+
+.menu-image img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.menu-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.menu-content{
+
+    padding:20px;
+
+}
+
+.menu-category{
+
+    background:#E8F5E9;
+
+    color:#00754A;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.menu-content h3{
+
+    margin-top:15px;
+
+    color:#1E3932;
+
+    font-size:24px;
+
+}
+
+.menu-content p{
+
+    color:#666;
+
+    margin:15px 0;
+
+    line-height:26px;
+
+}
+
+/* ===========================
+   RATING
+=========================== */
+
+.menu-rating{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    color:#FFC107;
+
+    margin-bottom:18px;
+
+}
+
+.menu-rating span{
+
+    margin-left:10px;
+
+    color:#444;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   PRICE
+=========================== */
+
+.menu-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.menu-footer h2{
+
+    color:#00754A;
+
+    font-size:28px;
+
+}
+
+/* ===========================
+   ADD TO CART BUTTON
+=========================== */
+
+.cart-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:160px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:linear-gradient(135deg,rgba(89, 6, 6, 0.721),#4a2c2a);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:0.4s;
+
+    box-shadow:0 6px 18px #4a2c2a(0,117,74,.35);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Icon */
+
+.cart-icon{
+
+    font-size:18px;
+
+    transition:.4s;
+
+}
+
+/* Shine Effect */
+
+.cart-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transition:.7s;
+
+}
+
+.cart-btn:hover::before{
+
+    left:120%;
+
+}
+
+/* Hover */
+
+.cart-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:linear-gradient(135deg,#4a2c2a,#4a2c2a);
+
+    box-shadow:0 12px 25px rgba(0,117,74,.45);
+
+}
+
+/* Icon Animation */
+
+.cart-btn:hover .cart-icon{
+
+    transform:rotate(-15deg) scale(1.2);
+
+}
+
+/* Click */
+
+.cart-btn:active{
+
+    transform:scale(.95);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.menu-card{
+
+width:100%;
+
+}
+
+}

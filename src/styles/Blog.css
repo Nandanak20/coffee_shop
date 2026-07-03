@@ -1,0 +1,249 @@
+.blog{
+
+    width:90%;
+
+    margin:80px auto;
+
+}
+
+/* Heading */
+
+.blog-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.blog-header h2{
+
+    font-size:40px;
+
+    color:#1e3932;
+
+}
+
+.view-btn{
+
+    background:#00754A;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#005f3c;
+
+}
+
+/* Blog Card */
+
+.blog-card{
+
+    position:relative;
+
+    height:520px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/* Image */
+
+.blog-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.8s;
+
+}
+
+/* -------- Modification 1 -------- */
+
+.blog-card:hover .blog-image{
+
+    transform:scale(1.08);
+
+}
+
+/* Overlay */
+
+.blog-overlay{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.35);
+
+    color:white;
+
+    padding:70px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+}
+
+/* Tag */
+
+.blog-tag{
+
+    width:170px;
+
+    text-align:center;
+
+    background:white;
+
+    color:#00754A;
+
+    padding:10px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+}
+
+/* -------- Modification 2 -------- */
+
+.blog-overlay h1{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+    animation:slideText 1.5s;
+
+}
+
+.blog-overlay p{
+
+    width:600px;
+
+    font-size:19px;
+
+    line-height:30px;
+
+    margin-bottom:30px;
+
+}
+
+@keyframes slideText{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Learn Button */
+
+.learn-btn{
+
+    width:180px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:35px;
+
+    background:white;
+
+    color:#00754A;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+/* -------- Modification 3 -------- */
+
+.learn-btn:hover{
+
+    background:#00754A;
+
+    color:white;
+
+}
+
+.learn-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:40%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.5);
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+
+}
+
+.learn-btn:hover::before{
+
+    left:130%;
+
+}

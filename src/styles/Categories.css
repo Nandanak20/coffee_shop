@@ -1,0 +1,229 @@
+.categories{
+
+    width:90%;
+
+    margin:70px auto;
+
+    text-align:center;
+
+}
+
+.categories h2{
+
+    font-size:42px;
+
+    color:#1e3932;
+
+    margin-bottom:40px;
+
+}
+
+.category-list{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+}
+
+/* ============================= */
+/* CATEGORY CARD */
+/* ============================= */
+
+.category-card{
+
+    width:180px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    animation:floatCard 3s ease-in-out infinite;
+
+    transition:.4s;
+
+}
+
+/* Different animation delay */
+
+.category-card:nth-child(2){
+
+animation-delay:.3s;
+
+}
+
+.category-card:nth-child(3){
+
+animation-delay:.6s;
+
+}
+
+.category-card:nth-child(4){
+
+animation-delay:.9s;
+
+}
+
+.category-card:nth-child(5){
+
+animation-delay:1.2s;
+
+}
+
+.category-card:nth-child(6){
+
+animation-delay:1.5s;
+
+}
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+
+.category-card img{
+
+    width:160px;
+
+    height:160px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid white;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.5s;
+
+}
+
+/* Animation 2 */
+
+.category-card:hover img{
+
+    transform:scale(1.1) rotate(5deg);
+
+    border-color:#4a2c2a;;
+
+}
+
+/* ============================= */
+/* ICON */
+/* ============================= */
+
+.circle-icon{
+
+    width:55px;
+
+    height:55px;
+
+    margin:-25px auto 15px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#4a2c2a;;
+
+    font-size:24px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.2);
+
+    animation:pulseIcon 2s infinite;
+
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.category-card h3{
+
+    color:#1e3932;
+
+    font-size:18px;
+
+    margin-top:10px;
+
+}
+
+/* ============================= */
+/* Hover */
+/* ============================= */
+
+.category-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* ============================= */
+/* Animation 1 */
+/* Floating */
+/* ============================= */
+
+@keyframes floatCard{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+/* ============================= */
+/* Animation 3 */
+/* Pulse */
+/* ============================= */
+
+@keyframes pulseIcon{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.category-list{
+
+justify-content:center;
+
+gap:25px;
+
+}
+
+}

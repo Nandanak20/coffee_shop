@@ -1,0 +1,145 @@
+/* ========================= */
+/* Gift Card */
+/* ========================= */
+
+.gift-card{
+
+    width:430px;
+
+    display:flex;
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+/* Hover */
+
+.gift-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+/* Image */
+
+.gift-image{
+
+    width:170px;
+
+    overflow:hidden;
+
+}
+
+.gift-image img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.gift-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Content */
+
+.gift-details{
+
+    flex:1;
+
+    padding:18px;
+
+}
+
+/* Tag */
+
+.gift-tag{
+
+    background:#E6F4F1;
+
+    color:#4a2c2a;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/* Title */
+
+.gift-details h3{
+
+    margin-top:12px;
+
+    color:#4a2c2a;
+
+    font-size:22px;
+
+}
+
+/* Description */
+
+.gift-details p{
+
+    margin:12px 0;
+
+    color:#555;
+
+    line-height:24px;
+
+}
+
+/* Button */
+
+.gift-btn{
+
+    margin-top:15px;
+
+    background:#4a2c2a;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+/* Hover */
+
+.gift-btn:hover{
+
+    background:#4a2c2a;
+
+    transform:scale(1.05);
+
+}

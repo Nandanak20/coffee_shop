@@ -1,0 +1,125 @@
+/* =============================== */
+/* Gift Tabs Section */
+/* =============================== */
+
+.gift-tabs-section{
+
+    width:100%;
+
+    background:#F8F5F0;
+
+    padding:20px 0;
+
+}
+
+/* Tabs */
+
+.gift-tabs{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+}
+
+/* Button */
+
+.gift-tabs button{
+
+    background:none;
+
+    border:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#555;
+
+    cursor:pointer;
+
+    padding-bottom:12px;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+/* Hover */
+
+.gift-tabs button:hover{
+
+    color:#4a2c2a;
+
+}
+
+/* Underline Animation */
+
+.gift-tabs button::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0;
+
+    width:0;
+
+    height:3px;
+
+    background:#4a2c2a;
+
+    transform:translateX(-50%);
+
+    transition:.4s;
+
+}
+
+.gift-tabs button:hover::after{
+
+    width:100%;
+
+}
+
+/* Active Tab */
+
+.active-tab{
+
+    color:#4a2c2a !important;
+
+}
+
+.active-tab::after{
+
+    width:100% !important;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.gift-tabs{
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.gift-tabs button{
+
+font-size:16px;
+
+}
+
+}
